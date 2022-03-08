@@ -1,0 +1,27 @@
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(74, 110, 19);
+    text-decoration: wheat;
+    text-shadow: grey;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.active {
+    font-size: larger;
+    font-family: fantasy;
+    border: 2px solid rgb(209, 71, 61);
+}
+
+img {
+    width: 200px;
+    border: 10px solid  rgb(61, 86, 167);
+    padding: 10px;
+    margin: 10px;
+}
+
+img:hover:nth-child(3n+3) {  
+    border: 10px solid rgb(209, 71, 61);
+}
