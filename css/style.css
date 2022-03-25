@@ -45,7 +45,7 @@ img:hover:nth-child(3n+3) {
 }
 
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: 'Poppins', serif;
 }
 
 @-webkit-keyframes fadeIn {
