@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/favicon.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Xiao Zhang Contact Page</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0MC31WYG4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0MC31WYG4');
+    </script>
+</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav aria-label="linktopages">
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li><a href = "index.html" >About R&B</a></li>
+				<li><a href = "rnbartists.html">Some excellent R&B artists</a></li>
+				<li><a href = "rnbworks.html">Recommendations for R&B works</a></li>
+				<li><a href = "rnbhistory.html">History of R&B</a></li>
+                <li class="active"><a href = "contact.html">Contact Page</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<br>
+		<br>
+		<h1>Contact Me!</h1>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main>
+
+        <div class="skip"><a href="#contact-header">Skip to Main Content</a></div>
+        <div class="container-contact">
+
+        <!-- <div id = 'contact-header'>
+                <h1>Contact</h1>
+        </div> -->
+        <form class="form-horizontal" action = 'https://formspree.io/mdooobly' method="POST">
+                <fieldset>
+                    <legend class="text-center">Contact Information</legend>
+            
+                    <div class="form-group">
+                        <span><i class="firstname"></i></span>
+                        <div>
+                            <label for="fname">First Name<input id="fname" name="name" type="text" placeholder="First Name" class="form-control" aria-label= "First Name" required></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span><i class="lastname"></i></span>
+                        <div>
+                            <label for="lname">Last Name<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control" aria-label="Last Name" required></label>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <span><i class="email"></i></span>
+                        <div>
+                            <label for="email">Email Address<input id="email" name="email" type="email" placeholder="Email Address" class="form-control" aria-label="Email Address" required></label>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <span><i class="phonenumber"></i></span>
+                        <div>
+                            <label for='phone'>Phone Number<input id="phone" name="phone" type="tel" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone (use format ###-###-####)" class="form-control" aria-label= "Phone Number" required></label>
+                        </div>
+                    </div>
+            
+                    <!-- <div class="form-group">
+                        <span><i class = "message"></i></span>
+                        <div>
+                            <label for='message'>Message<textarea class="form-control" id="message" name="message" placeholder="Enter your message here!" aria-label= "Type your message here" required></textarea></label>
+                        </div>
+                    </div> -->
+            
+                    <div class="form-group">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg" aria-label= "Submit button">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br/>
+
+            <form action="https://formspree.io/f/xgedzkye" method = "post">
+                <h1>Show your opinion about R&B!
+                <section class="opinion">
+                    <label for="idea">How much do you like about R&B?</label>
+                    <input type="range" name="idea" id="idea" value="3" min="1" max="5">
+                </section>
+                <section class="Name">
+                    <label for="name">Do you have any other suggestions?</label>
+                    <input type="text" name="name" id="name">
+                </section>
+                <section class="submission">
+                    <input type="submit" value="Submit">
+                  </section>
+                <hr>
+                </h1>
+            </form> 
+            </div>
+		
+	</main>
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>Xiao Zhang &copy; 2022 </p>
+		<i class="fa fa-car"></i>
+	</footer>
+</body>
+</html>
