@@ -127,3 +127,19 @@ footer p{
   padding: 20px 0;
   font-size: 30px;
 }
+
+@media only screen and (min-width: 900px) {
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #background h1 {
+      animation: none;
+  }
+}
