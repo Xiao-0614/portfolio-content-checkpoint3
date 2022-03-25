@@ -130,11 +130,7 @@ footer p{
 
 @media only screen and (min-width: 900px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5 px;
     background-color: grey;
-    padding: 10px;
 }
 }
 
