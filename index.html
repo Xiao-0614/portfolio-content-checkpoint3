@@ -155,22 +155,25 @@
 
 		<br>
 		<br>
-
+		
 		<form action="https://formspree.io/f/xgedzkye" method = "post">
-			<h1>Show your opinion about R&B!
-			<section class="opinion">
-				<label for="idea">How much do you like about R&B?</label>
-				<input type="range" name="idea" id="idea" value="3" min="1" max="5">
-			</section>
-			<section class="Name">
-				<label for="name">What's your name?</label>
-				<input type="text" name="name" id="name">
-			</section>
-			<section class="submission">
-				<input type="submit" value="Submit">
-			  </section>
-			<hr>
-			</h1>
+			<h1>Show your opinion about R&B!</h1>
+			<fieldset>
+				<div class="opinion">
+					<label for="idea">How much do you like about R&B?</label>
+					<input type="range" name="idea" id="idea" value="3" min="1" max="5">
+				</div>
+				<div class="Name">
+					<label for="name">Do you have any other suggestions?</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div class="submission">
+					<div>
+						<button type="submit" aria-label= "Submit button">Submit</button>
+					</div>
+				</div>
+			</fieldset>
+
 		</form> 
 		
 	</main>
