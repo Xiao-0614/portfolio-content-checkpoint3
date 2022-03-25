@@ -131,22 +131,45 @@ footer p{
 @media only screen and (min-width: 900px) {
   .gallary{
     display: inline-flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
     background-color: grey;
-}
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(112, 173, 243, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .gallary{
     display: inline-flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: grey;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(112, 173, 243, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
   }
 }
