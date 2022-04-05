@@ -386,3 +386,9 @@ footer p{
     animation: none;
   }
 }
+
+legend {
+  font-size: 150%;
+  font-style: italic;
+  text-align: center;
+}
