@@ -13,7 +13,9 @@
 	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 	<title>Xiao Zhang Contact Page</title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0MC31WYG4"></script>
     <script>
@@ -27,27 +29,31 @@
 
 <!-- All of the visible code in the page belongs in the body tag -->
 <body>
-	<!-- Header is a sematic tag page that aids readability -->
-	<header>
+
+    <header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav aria-label="linktopages">
-			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
-				<li><a href = "index.html" >About R&B</a></li>
-				<li><a href = "rnbartists.html">Some excellent R&B artists</a></li>
-				<li><a href = "rnbworks.html">Recommendations for R&B works</a></li>
-				<li><a href = "rnbhistory.html">History of R&B</a></li>
-                <li class="active"><a href = "contact.html">Contact Page</a></li>
-			</ul>
-		</nav>
+		<div class="nav">
+			<nav aria-label="linktopages">
+				<ul class="nav-links">
+                    <li><a href = "index.html" >About R&B</a></li>
+                    <li><a href = "rnbartists.html">Some excellent R&B artists</a></li>
+                    <li><a href = "rnbworks.html">Recommendations for R&B works</a></li>
+                    <li><a href = "rnbhistory.html">History of R&B</a></li>
+                    <li class="active"><a href = "contact.html">Contact Page</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id = "jump_to">
+            <a class = "skip" href="#main">Skip to Main Content</a>
+        </div>  
+
 		<!-- The h1 is a semantic tag that aids accessibility -->
-		<br>
-		<br>
-		<h1>Contact Me!</h1>
+		<h1 class="google_font">Contact Me!</h1>
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main>
+	<main id="main">
 
         <!-- <div id = 'contact-header'>
                 <h1>Contact</h1>
@@ -117,8 +123,6 @@
                     </div>
                 </fieldset>
             </form>
-
-            <br/>
 
             <form action="https://formspree.io/f/xgedzkye" method = "post">
                 <h1>Show your opinion about R&B!</h1>

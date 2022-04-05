@@ -13,6 +13,7 @@
 	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 	<title>About R&B</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0MC31WYG4"></script>
@@ -30,34 +31,36 @@
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav aria-label="linktopages">
-			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
-				<li class="active"><a href = "index.html" >About R&B</a></li>
-				<li><a href = "rnbartists.html">Some excellent R&B artists</a></li>
-				<li><a href = "rnbworks.html">Recommendations for R&B works</a></li>
-				<li><a href = "rnbhistory.html">History of R&B</a></li>
-				<li><a href = "contact.html">Contact Page</a></li>
-			</ul>
-		</nav>
+		<div class="nav">
+			<nav aria-label="linktopages">
+				<ul class="nav-links">
+					<!-- Since I am on the index file I added class = action to the link to index. -->
+					<li class="active"><a href = "index.html" >About R&B</a></li>
+					<li><a href = "rnbartists.html">Some excellent R&B artists</a></li>
+					<li><a href = "rnbworks.html">Recommendations for R&B works</a></li>
+					<li><a href = "rnbhistory.html">History of R&B</a></li>
+					<li><a href = "contact.html">Contact Page</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id = "jump_to">
+            <a class = "skip" href="#main">Skip to Main Content</a>
+        </div>  
+
 		<!-- The h1 is a semantic tag that aids accessibility -->
-		<br>
-		<br>
-		<h1>R&B -- Rhythm and blues</h1>
+		<h1 class="google_font">R&B -- Rhythm and blues</h1>
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main>
+	<main id="main">
 
 		<audio controls autoplay>
 			<source src="Neyo-short.mp3" type="audio/mpeg">
 		  Your browser does not support the audio element.
 		</audio>
-		<br>
 
 		<img src = "images/firstimg.png" alt ="first img about R&B" width="200">
-		<br>
-		<br>
 		<p> <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
 			Rhythm and blues, often abbreviated as R&B or R'n'B, 
 		   is a genre of popular music that originated in 
@@ -78,8 +81,6 @@
 		<img src = "images/aboutr&b.png" alt ="R&B illustration and clip art" width="200">
 
 		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
-		<br>
-		<br>
 		<p>The term "rhythm and blues" has undergone a number of 
 			shifts in meaning. In the early 1950s, it was frequently 
 			applied to blues records. Starting in the mid-1950s, 
@@ -100,9 +101,6 @@
 
 		<img src = "images/sax.png" alt ="a picture of a man playing sax" width="200">
 
-
-		<br>
-		<br>
 		<h2>
 			3 Characteristics of Classic R&B:
 		</h2>
@@ -128,9 +126,6 @@
 					while others reworked blues standards for contemporary audiences.</li>
 			</ol>
 		</nav>
-
-		<br>
-		<br>
 
 		<h2>
 			3 Characteristics of Contemporary R&B
@@ -158,9 +153,6 @@
 					like Jazmine Sullivan, Alicia Keys, and Erykah Badu.</li>
 			</ol>
 		</nav>
-
-		<br>
-		<br>
 
 		<form action="https://formspree.io/f/xgedzkye" method = "post">
 			<h1>Show your opinion about R&B!</h1>
