@@ -2,48 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(74, 110, 19);
-    text-decoration: wheat;
-    text-shadow: grey;
-}
-
-a:hover {
-    color: hotpink;
-}
-
-.active {
-    font-size: larger;
-    font-family: fantasy;
-    border: 2px solid rgb(209, 71, 61);
-}
-
-img {
-    width: 200px;
-    border: 10px solid  rgb(61, 86, 167);
-    padding: 10px;
-    margin: 10px;
-}
-
 /* img:hover:nth-child(3n+3) {  
     border: 10px solid rgb(209, 71, 61);
 } */
@@ -407,4 +365,69 @@ legend {
   font-size: 150%;
   font-style: italic;
   text-align: center;
+}
+
+.game {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 200px 400px;
+}
+
+#puppy {
+  width: 50px;
+  height: 50px;
+  /* background-color: black; */
+  background-image: url(../images/puppy.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 140px;
+}
+
+.jump {
+  animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 130px;
+  }
+
+  50% {
+    top: 80px; 
+  }
+
+  80% {
+    top: 130px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+#bones {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 120px;
+  left: 580px;
+  background-image: url(../images/bones.png);
+  background-size: 20px 40px;
+
+  animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: -20px;
+  }
 }
